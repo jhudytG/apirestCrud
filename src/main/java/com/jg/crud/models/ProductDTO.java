@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "products")
+@Document(collection = "products")
 public class ProductDTO {
 	
 	@Id
@@ -48,7 +48,6 @@ public class ProductDTO {
 	public void setExpiry_date(LocalDate expiry_date) {
 		this.expiry_date = expiry_date;
 	}
-	
-	
 
+	
 }

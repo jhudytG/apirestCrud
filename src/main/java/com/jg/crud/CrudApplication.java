@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableSwagger2
 public class CrudApplication {
-	
+
 	@Bean
 	  public Docket productsApi() {
 	    return new Docket(DocumentationType.SWAGGER_2)
@@ -22,10 +22,9 @@ public class CrudApplication {
 	          .paths(PathSelectors.any())
 	          .build();
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CrudApplication.class, args);
-		System.out.println("Levantado");
 	}
 
 }
